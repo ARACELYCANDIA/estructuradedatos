@@ -1,0 +1,17 @@
+//5. EJEMPLO CON DO WHILE...
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int i=100;
+    int total;
+    do{
+        total=total+i;
+        i=i-2;
+    }
+    while(i>=50);
+    cout<<"El total es: "<<total<<endl;
+    return 0;
+}
