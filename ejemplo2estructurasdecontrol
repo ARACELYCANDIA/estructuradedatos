@@ -1,0 +1,18 @@
+//3. EJEMPLO CON FOR...
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int total;
+    int i=100;
+    for(i<=100;i>=50;i-=2)
+    {
+        total=total+i;
+        
+    }
+    cout<<"total es: "<<total<<endl;
+
+    return 0;
+}
