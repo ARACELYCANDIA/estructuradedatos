@@ -1,0 +1,24 @@
+//9. CALCULAR EL AREA DEL TRIANGULO UTILIZANDO FUNCIONES Y EL MAIN DEBE PEDIR DATOS DE ENTRADAS CON PROTOTIPO.
+#include <iostream>
+
+using namespace std;
+float area_triangulo(float b,float h);
+int main()
+{
+    float b,h,area;
+    cout<<"Ingrese la base"<<endl;
+    cin>>b;
+    cout<<"Ingrese la altura"<<endl;
+    cin>>h;
+    area=area_triangulo(b,h);
+    cout<<"El area del triangulo es: "<<area<<endl;
+
+    return 0;
+}
+
+float area_triangulo(float b, float h)
+{
+    float a;
+    a=(b*h)/2;
+    return a;
+}
