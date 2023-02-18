@@ -1,0 +1,125 @@
+//REALIZAR LA PLANILLA DE SUELDOS
+#include <iostream>
+#include <math.h>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+    int ci,anodeingreso;
+    float anticipo,prestamo,bono_antiguedad,haberbasico;
+    char a;
+    string nombre,apellido;
+    cout<<"\n**************PLANILLA DE SUELDOS***************\n"<<endl;
+    cout<<"Quiero recordarte que este  programa es exclusivamente para realizar el calculo para planillas de sueldos de cada trabajador"<<endl;
+    cout<<"Si deseas continuar en el programa presione la tecla S y si quiere finalizar presione N"<<endl;
+    cin>>a;
+    if(a=='s'||a=='S')
+    {
+        cout<<"BIENVENIDO"<<endl;
+        
+    }
+    else{
+        cout<<"Gracias por su tiempo."<<endl;
+        return 0;
+        
+    }
+    cout<<"Ingrese el nombre del trabajador"<<endl;
+    cin>>nombre;
+    cout<<"Ingrese el apellido del trabajador"<<endl;
+    cin>>apellido;
+    cout<<"Ingrese el numero de cedula de identidad"<<endl;
+    cin>>ci;
+    cout<<"Ingrese su haber basico del trabajador (sueldo)"<<endl;
+    cin>>haberbasico;
+    cout<<"Ingrese la cantidad de años que anda trabajando"<<endl;
+    cin>>anodeingreso;
+    if(anodeingreso>=0 && anodeingreso<=1)
+    {
+        cout<<"Bono de antiguedad es del 0%, por tanto el monto es:"<<endl;
+        bono_antiguedad=((2250*3)*0.000);
+    }
+    else{
+        if(anodeingreso>=2 && anodeingreso<=4)
+        {
+            cout<<"Bono de antiguedad es el 5%, por tanto el monto es:"<<endl;
+            bono_antiguedad=(2250*3)*0.050;
+        }
+        else{
+            if(anodeingreso>=5 && anodeingreso<=7)
+            {
+                cout<<"Bono de antiguedad es el 11%, por tanto el monto es:"<<endl;
+                bono_antiguedad=(2250*3)*0.110;
+            }
+            else{
+                if(anodeingreso>=8 && anodeingreso<=10)
+                {
+                    cout<<"Bono de antiguedad es el 18%, por tanto el monto es:"<<endl;
+                    bono_antiguedad=(2250*3)*0.180;
+                }
+                else{
+                    if(anodeingreso>=11 && anodeingreso<=14)
+                    {
+                        cout<<"Bono de antiguedad es del 26%, por tanto el monto es:"<<endl;
+                        bono_antiguedad=(2250*3)*0.260;
+                    }
+                    else{
+                        if(anodeingreso>=15 && anodeingreso<=19)
+                        {
+                            cout<<"Bono de antiguedad es del 34%, por tanto el monto es:"<<endl;
+                            bono_antiguedad=(2250*3)*0.340;
+                        }
+                        else{
+                            if(anodeingreso>=20 && anodeingreso<=25)
+                            {
+                                cout<<"Bono de antiguedad es del 42% , por tanto el monto es:"<<endl;
+                                bono_antiguedad=(2250*3)*0.420;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    cout<<"BONO DE ANTIGUEDAD: "<<bono_antiguedad<<endl;
+ cout<<"Ingrese el monto del anticipo, sino cuenta con ello coloque 0"<<endl;
+ cin>>anticipo;
+ cout<<"Ingrese el monto de prestamo, sino cuenta con ello coloque 0"<<endl;
+ cin>>prestamo;
+ float totalganado,AFP,total_descuento_y_retenciones,liquido_pagable;
+totalganado=(haberbasico+bono_antiguedad);
+cout<<"TOTAL GANADO: "<<totalganado<<endl;
+ AFP=(totalganado*0.127);
+//retenciones
+float ANS;
+      if(totalganado>13000)
+      {
+          ANS=(totalganado-13000)*0.01;
+          
+      }
+      else{
+          if(totalganado>25000)
+          {
+              ANS=(totalganado-25000)*0.05;
+              
+          }
+          else{
+              if(totalganado>35000)
+              {
+                  ANS=(totalganado-35000)*0.10;
+                  
+              }
+              
+          }
+          
+      }
+cout<<"ANS: "<<ANS<<endl;
+      
+total_descuento_y_retenciones=((anticipo+prestamo)+ANS);
+cout<<"TOTAL DE DESCUENTO Y RETENCIONES: "<<total_descuento_y_retenciones<<endl;
+liquido_pagable=(totalganado-(anticipo+prestamo+ANS));
+cout<<"LIQUIDO PAGABLE: "<<liquido_pagable<<endl;
+
+return 0;
+}
