@@ -1,0 +1,76 @@
+#include <iostream>
+#include <stdlib.h>
+using namespace std;
+
+void cuadrado();
+void signo();
+bool resultado();
+
+void main(){
+    int opcion;
+    do{
+        cout<<"**********MENÚ**********"<<endl;
+        cout<<"1.Calcular el area de un cuadrado "<<endl;
+        cout<<"2.Determinar si es un numero positivo o negativo "<<endl;
+        cout<<"3.La suma de 20+30 es... "<<endl;
+        cout<<"4.SALIR "<<endl;
+        cout<<"Ingrese la opcion"<<endl;
+        cin>>opcion;
+        switch(opcion){
+            case 1:cuadrado();
+            break;
+            case 2: signo();
+            break;
+            case 3: if(resultado ==50){
+                cout<<"Es correcto"<<endl;
+            }
+            else{
+                cout<<"Es incorrecto"<<endl;
+            }
+            case 0: cout<<"SALIR"<<endl;
+            break;
+            default: cout<<"Opcion invalida"<<endl;
+            break;
+            
+            
+            
+        }
+        system("pause");
+        system("cls");
+    } 
+    while(opcion!=0)
+}
+
+void cuadrado()
+{
+    float a,b,area;
+    cout<<"ingrese la base"<<endl;
+    cin>>a;
+    cout<<"ingrese la altura"<<endl;
+    cin>>b;
+    area=(a*b);
+    cout<<"el area del cuadrado es: "<<area<<endl;
+}
+void signo()
+{
+    int n;
+    cout<<"ingrese el valor"<<endl;
+    cin>>n;
+    if(n>=0)
+    {
+        cout<<"El numero leido es positivo"<<endl;
+        
+    }
+    else{
+        cout<<" El numero leido es negativo"<<endl;
+    }
+}
+
+bool resultado()
+{
+    int s;
+    cout<<"Ingrese el resultado de la  suma"<<endl;
+    cin>>s;
+}
+
+
