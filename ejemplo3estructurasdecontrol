@@ -1,0 +1,19 @@
+//4. EJEMPLO CON WHILE...
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int total;
+    int i=100;
+    while(i<=50)
+    {
+        total=total+i;
+        i-=2;
+        
+    }
+    cout<<"total es: "<<total<<endl;
+
+    return 0;
+}
