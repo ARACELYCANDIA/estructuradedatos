@@ -1,0 +1,19 @@
+//2. EJEMPLO CON WHILE SIGNO POSITIVO (VICEVERSA)...
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int total;
+    int i=50;
+    while(i<=100)
+    {
+        total=total+i;
+        i+=2;
+        
+    }
+    cout<<"total es: "<<total<<endl;
+
+    return 0;
+}
