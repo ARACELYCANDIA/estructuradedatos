@@ -1,0 +1,16 @@
+//1.REALIZAR UN EJEMPLO CON EL AREA DEL TRIANGULO(APUNTES DE CLASE)
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+ float base,altura,a;
+ cout<<"Ingrese el valor de la base"<<endl;
+ cin>>base;
+ cout<<"Ingrese el valor de la altura"<<endl;
+ cin>>altura;
+ a=(base*altura)/2;
+ cout<<"el area del triangulo es: "<<a<<endl;
+    return 0;
+}
