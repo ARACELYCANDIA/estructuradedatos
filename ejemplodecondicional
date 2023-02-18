@@ -1,0 +1,30 @@
+
+
+//6. REALIZAR UN EJEMPLO CON SWITCH
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    char c;
+    cout<<"Ingrese la opcion que le interesa saber"<<endl;
+    cout<<"a. un saludo cordial..."<<endl;
+    cout<<"b. una despedida..."<<endl;
+    cout<<"c. concepto de sintaxis..."<<endl;
+    cout<<"d. concepto de datos en programacion"<<endl;
+    cin>>c;
+    switch(c)
+    {
+        case 'a':cout<<"te doy este saludo: hola como esta espero que se encuentre muy bien y que haya tenido un excelente dia";
+        break;
+        case 'b':cout<<"aqui va la despedida: no me queria despedir pero llego la hora, te extrañare mucho espero que te vaya bien en tu vida y los mejores exitos, adios.";
+        break;
+        case 'c':cout<<"es la forma de escribir, presentar el programa";
+        break;
+        case 'd':cout<<"los datos son aquelllos que representa un espacio de almacenamiento.";
+        break;
+        default: cout<<"vocal no minuscula";  
+    }
+    return 0;
+}
