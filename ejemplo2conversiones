@@ -1,0 +1,19 @@
+//8. EJEMPLO CON CONVERSIONES...
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float a=5;
+    int b;
+    b=a;
+    a=(float)b;
+    b=a+a;
+    a=b+b;
+    a=b/b;
+    cout<<"mostrar valor de a "<<a<<endl;
+    cout<<"mostrar valor de b "<<b<<endl;
+    return 0;
+
+}
