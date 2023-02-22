@@ -1,0 +1,38 @@
+// recursividadejemplo.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
+//
+#include <iostream>
+#include "stdlib.h"
+
+using namespace std;
+
+int factorial(int n);
+
+int main() {
+    system("color 0a");
+    int nro;
+    cout << "\n\t\t[     RECURSIVIDAD     ]\n";
+    cout << "\t\t————————\n\n";
+    cout << " EJERCICIO 2: Para saber el factorial " << endl << endl;
+    do {
+        cout << " INGRESE NUMERO: ";
+        cin >> nro;
+        if (nro < 0) cout << "\nINGRESE UN NUMERO ENTERO Y POSITIVO… \n";
+    } while (nro < 0);
+    cout << endl;
+    cout << "\n Numero:" << nro << endl;
+    cout << "\n Factorial:";
+    cout<<"El valor factorial es: "<<factorial(nro);
+    return 0;
+}
+
+int factorial(int n)
+{
+    if (n == 0)
+        return 1;
+    else
+        return n * factorial(n - 1);
+       
+        
+    
+
+}
