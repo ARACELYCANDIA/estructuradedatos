@@ -1,0 +1,33 @@
+#ejercicio5
+print("hola mundo")
+nombre=input("ingrese su nombre: ")
+print("hola mundo "+nombre)
+horas=float(input("introduce tus horas de trabajo: "))
+coste=float(input("introduce lo que cobras por hora: "))
+paga=horas*coste
+print(nombre+ " tu paga es ",paga)
+
+#ejercicio7
+perso=float(input("introduzcaq su peso: "))
+altura=float(input("Introduzca su altura: "))
+nombre=input("nombre: ")
+imc=round(peso/altura**2.2)
+print("Tu indice de masa corporal es " +str(imc))
+
+#ejercicio8
+n=int(input("Ingrese el valor del dividendo: "))
+m=int(input("ingrese el valor del divisor"))
+coeficiente=int(n/m)
+resto=float(n-(coeficiente*m))
+print("Su coeficiente es",coeficiente)
+print("El resto es",resto)
+
+#ejercicio con condicional
+genero=input("ingrese su genero(escriba si es mujer u hombre)")
+if(genero=="mujer" or "hombre")
+edad=int(input("Ingrese la edad: "))
+if(edad>=60):
+print("Es mayor de edad, ya esta jubilada")
+else:
+print("no esta jubilada")
+
