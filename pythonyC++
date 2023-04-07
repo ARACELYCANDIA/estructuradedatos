@@ -1,0 +1,26 @@
+//escribir un programa donde pregunte cual es el nombre del usuario contar sus letras y transformar a mayuscula.//c++
+//C++
+#include <iostream>
+#include<string.h>
+using namespace  std;
+int main()
+{
+string nombre;
+int i;
+cout<<"Hola cual es tu nombre?"<<endl;
+cin>>nombre;
+system("clear");
+cout<<"el texto original ingresado es: "<<nombre<<endl;
+for(i=0;nombre.size();i++);
+{
+nombre[i]=toupper(nombre[i]);
+}
+cout<<"el nombre: "<<nombre<<" se convirtio a mayuscula"<<endl;
+cout<<"El nombre: "<<nombre<<" tiene: "<<i<<" letras"<<endl;
+return 0;
+}
+
+#python
+nombre=input("¿Hola, cual es tu nombre? ")
+print("el texto riginalingresado es: ")
+print(nombre.upper() + "tiene " + str(len(nombre)) + "letras")
