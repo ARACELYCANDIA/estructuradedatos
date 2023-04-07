@@ -1,0 +1,19 @@
+//recursividad de cabeza
+void fun(int n){
+    if(n>0){
+        1.fun(n-1);
+        2.cout<<n;
+        }
+    }
+    
+//funcion original
+void fun(int n)
+{
+    int i=1;
+    while(i<=n)
+    {
+        cout<<i;
+        i++;
+        }
+    }
+//
