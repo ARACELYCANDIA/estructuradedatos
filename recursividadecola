@@ -1,0 +1,19 @@
+void fun(int n) //recursividad de cola
+{
+ if(n>0)
+ {
+  1.cout<<n;
+  2.fun(n-1);
+  }
+}
+
+//funcion original sin recursividad:
+void fun(int n)
+{
+  while (n>0)
+  {
+    cout<<n;
+     n--;
+   }
+}
+//
