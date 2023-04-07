@@ -1,0 +1,18 @@
+class Triangulo
+{
+	//atributos
+	// Atributos - Variables
+private:
+	float base;
+	float altura;
+	float area;
+	//Metodos - Funciones
+public:
+	Triangulo(float a, float b);
+	Triangulo(void); //Constructor - asigna memoria 
+	~Triangulo(void); //Deestructor - libera memoria
+	//Prototipos
+	float calculararea(float b, float h);
+	float getbase();
+	void setbase(float b);
+};
