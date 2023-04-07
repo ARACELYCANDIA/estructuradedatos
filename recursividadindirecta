@@ -1,0 +1,13 @@
+//recursividad de arbol
+void fA(int n){
+    if(n>0){
+        cout<<n;
+        fB(n-1);
+        }
+    }
+void funB(int n){
+    if(n>1){
+        cout<<n;
+        fA(n/2);
+    }
+}
